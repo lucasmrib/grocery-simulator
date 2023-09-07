@@ -5,13 +5,9 @@ const fugazOne = Fugaz_One({
 	subsets: ['latin']
 })
 
-interface HeaderProps {
-
-}
-
-export function Header(props : HeaderProps){
+export function Header(){
 	return(
-		<header className="flex items-center justify-between px-20 py-10">
+		<header className="flex items-center justify-between px-44 py-8">
 			<a className={`${fugazOne.className} text-3xl cursor-pointer select-none`}>Grocery Simulator</a>
 		</header>
 	)

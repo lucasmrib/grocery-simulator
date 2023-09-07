@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Arimo } from 'next/font/google'
 import { Header } from '@/components/header'
 
-const inter = Inter({ subsets: ['latin'] })
+const arimo = Arimo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Grocery Simulator',
@@ -17,8 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
+      <body className={`${arimo.className} max-h-screen bg-zinc-50`}>
+        <Header/>
         {children}
       </body>
     </html>
