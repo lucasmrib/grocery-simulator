@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${arimo.className} max-h-screen bg-zinc-50`}>
+      <body className={`${arimo.className} min-h-screen bg-zinc-50`}>
         <Header/>
         {children}
       </body>
